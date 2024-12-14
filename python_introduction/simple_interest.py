@@ -11,4 +11,3 @@ R =float(input("Enter Rate of Interest:"))
 T =float(input("Enter Time in Year:"))
 I=(P*R*T)/100
 print("The simple interest is:",I)
-
