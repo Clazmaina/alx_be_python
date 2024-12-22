@@ -1,7 +1,7 @@
 def get_user_input():
-    task = input("Enter task description:")
-    priority = input("Enter task priority(high, medium, low):")
-    time_bound = input("Is the task time-bound?(yes/no):")
+    task = input("Enter your task:")
+    priority = input("Priority\s(high/medium/low):")
+    time_bound = input("Is it time-bound?(yes/no):")
     return task, priority, time_bound
 if __name__ == "__main__":
         task, priority, time_bound = get_user_input()
