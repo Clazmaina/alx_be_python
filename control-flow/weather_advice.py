@@ -12,3 +12,4 @@ def get_weather_recommendation():
         print("Sorry, I don't have recommendations for this weather.")
 if __name__=="__main__":
  weather = get_weather_recommendation()
+ user = input("What's the weather like today?(sunny/rainy/cold):")
