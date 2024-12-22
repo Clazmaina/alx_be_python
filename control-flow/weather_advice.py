@@ -12,3 +12,4 @@ def get_weather_recommendation():
         print("Sorry, I don't have recommendations for this weather.")
 if __name__=="__main__":
     get_weather_recommendation()
+    weather = get_weather_recommendation()
