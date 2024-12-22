@@ -23,5 +23,6 @@ if __name__ == "__main__":
         print("\nTask:", task)
         print("Priority:", priority)
         print("Time Bound:", time_bound)
+        print("Reminder:", urgency)
         reminder = f"Reminder:'{task}' is a {urgency}"
         print(reminder)
