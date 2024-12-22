@@ -1,4 +1,4 @@
-def get_weather_recommendation():
+def get_clothing_recommendation():
     weather_conditions = ["sunny", "rainy", "cold"]
     user = input("What's the weather like today?(sunny/rainy/cold):")
 
@@ -11,5 +11,4 @@ def get_weather_recommendation():
     else:
         print("Sorry, I don't have recommendations for this weather.")
 if __name__=="__main__":
- weather = get_weather_recommendation()
- user = input("What's the weather like today?(sunny/rainy/cold):")
+    weather = get_clothing_recommendation()
