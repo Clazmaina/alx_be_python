@@ -7,20 +7,22 @@ if __name__ == "__main__":
         task, priority, time_bound = get_user_input()
         match priority:
               case "high":
-                    urgency = "High priority"
+                    urgency = "high priority task."
               case "medium":
-                    urgency = "Medium priority"
+                    urgency = "medium priority task."
               case "low":
-                    urgency = "Low priority"
+                    urgency = "low priority task."
               case _:
-                    urgency = "Invalid priority. Please use 'high', 'medium', or 'low'."
+                    urgency = "invalid priority. Please use 'high', 'medium', or 'low'."
                     
         if time_bound == "yes":
               urgency+=" that requires immediate attention today!"
+        if time_bound == "no":
+              urgency+=" Consider completing it when you have free time."
         
         print("\nTask Description:", task)
         print("Priority:", priority)
         print("Time-Bound:", time_bound)
         print("Reminder:", urgency)
-        reminder = f"Reminder: {task} {urgency}"
+        reminder = f"Reminder:'{task}' is a {urgency}"
         print(reminder)
