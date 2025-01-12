@@ -1,4 +1,6 @@
-import datetime
+from datetime import datetime
+now = datetime.now()
+print(now)
 
 def display_current_datetime():
     now = datetime.datetime.now()
@@ -17,4 +19,3 @@ try:
     calculate_future_date(number_of_days)
 except ValueError:
     print("Please enter a valid integer number of days.")
-    
