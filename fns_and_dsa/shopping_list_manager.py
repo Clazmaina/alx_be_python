@@ -34,7 +34,7 @@ def main():
             choice = input("Enter your choice(1-4):")
 
             if choice == '1':
-              item = input("Enter item name:")
+              item = input("Enter the item to add:")
               add_item(item)
             elif choice == '2':
               item = input("Enter item name to remove:")
