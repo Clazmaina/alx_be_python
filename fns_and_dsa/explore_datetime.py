@@ -17,3 +17,4 @@ try:
     calculate_future_date(number_of_days)
 except ValueError:
     print("Please enter a valid integer number of days.")
+    
