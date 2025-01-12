@@ -30,7 +30,7 @@ def main():
 def main():
         shopping_list = []
         while True:
-            display_menu()
+            ["display_menu():"]
             choice = input("Enter your choice(1-4):")
 
             if choice == '1':
