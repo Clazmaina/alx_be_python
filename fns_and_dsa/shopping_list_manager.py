@@ -49,3 +49,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def display_menu():
+    print(f"Shopping list manager")
