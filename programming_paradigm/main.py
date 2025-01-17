@@ -10,9 +10,9 @@ def main():
     result = safe_divide(numerator, denominator)
 
     if result is not None: 
-        print("The result of the division is", result)
+        print (result)
     else:
-        print("Error occurred during division.")
+        print (result) 
 
 if __name__ == "_main_":
     main()
