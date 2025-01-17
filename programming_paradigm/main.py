@@ -3,14 +3,14 @@ from robust_division_calculator import safe_divide # type: ignore
 def main():
     if len(sys.argv) != 3:
         print("Usage: python main.py <numerator> <denominator>")
-        sys.exit(1)  # Exit with an error code
+        sys.exit(1)  
 
-    numerator = float(sys.argv[1])  # Convert to float for potential non-integer input
-    denominator = float(sys.argv[2])  # Convert to float for potential non-integer input
+    numerator = float(sys.argv[1])  
+    denominator = float(sys.argv[2])  
 
     result = safe_divide(numerator, denominator)
 
-    if result is not None:  # Check if result is not an error message
+    if result is not None: 
         print(result)
     else:
         print("Error occurred during division.")
