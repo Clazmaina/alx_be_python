@@ -7,12 +7,13 @@ def main():
 
     numerator = float(sys.argv[1])
     denominator = float(sys.argv[2])
+    
     result = safe_divide(numerator, denominator)
 
     if result is not None: 
-        print (result)
+        print("The result of the division is", result)
     else:
-        print (result) 
+        print("Error occurred during division.")
 
 if __name__ == "_main_":
     main()
