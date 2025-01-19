@@ -1,19 +1,26 @@
-import sys
-from robust_division_calculator import safe_divide # type: ignore
+from library_management import Book, Library
+
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python main.py <numerator> <denominator>")
-        sys.exit(1)  
+    # Setup a small library
+    library = Library()
+    library.add_book(Book("Brave New World", "Aldous Huxley"))
+    library.add_book(Book("1984", "George Orwell"))
 
-    numerator = float(sys.argv[1])
-    denominator = float(sys.argv[2])
-    
-    result = safe_divide(numerator, denominator)
+    # Initial list of available books
+    print("Available books after setup:")
+    print(library.list_available_books())
 
-    if result is not None: 
-        print("The result of the division is", result)
-    else:
-        print("Error occurred during division.")
+    # Simulate checking out a book
+    print("Checking out book\"1984\"")
+    library.check_out_book("1984")
+    print("\nAvailable books after checking out '1984':")
+    print(library.list_available_books())
 
-if __name__ == "_main_":
+    # Simulate returning a book
+    print("Returning book\"1984\"")
+    library.return_book("1984")
+    print("\nAvailable books after returning '1984':")
+    print(library.list_available_books())
+
+if __name__ == "__main__":
     main()
