@@ -11,4 +11,4 @@ class Book:
         return f"Book('{self.title}', '{self.author}', {self.year})"
 
     def __del__(self):
-        pass #Empty destructor for completeness
+        print(f"Deleting {self.title}")
